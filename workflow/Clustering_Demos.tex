@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+\title{Clustering Demos}
+\author{Pinak, Srashti }
+\date{March 2020}
+
+\begin{document}
+
+\maketitle
+
+\section*{Document classification with Hierarchical clustering}
+\subsection*{Dataset}
+20 newsgroups dataset available in  \href{https://scikit-learn.org/0.19/datasets/twenty_newsgroups.html}{scikit}
+\subsection*{Notebook}
+1. Load and look at sample data
+\newline
+2. Filter text (section 5.6.2.3) and look at the filtered text
+\newline
+3. Vectorize text
+\newline
+4. HAC with \href{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html}{sklearn.cluster} or \href{https://joernhees.de/blog/2015/08/26/scipy-hierarchical-clustering-and-dendrogram-tutorial/}{scipy.cluster}
+\newline
+5. Plot truncated dendrogram
+\newline
+6. Figure out the number of clusters based on \href{https://en.wikipedia.org/wiki/Silhouette_(clustering)}{silhouettes}
+\newline
+7. Figure out the number of misclassifications
+\subsection*{To Learn}
+1. Hierarchical Clustering
+\newline
+2. Bag of words model and TF-IDF
+\newline
+3. Silhouettes
+\newline
+4. Manipulation of 20 newsgroups dataset
+\newline
+5. Using Python to implement HAC
+\section*{Edge detection with k-means}
+\subsection*{Dataset} Images collected off the web
+
+\subsection*{Notebook}
+1. Load and create greyscale image
+\newline
+2. Compute features
+\newline
+3. Use k-means to find edges
+
+\end{document}
